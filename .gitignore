@@ -9,6 +9,7 @@ gi.txt
 *.exe
 *.targets
 *.props
+10/ConsoleApp11/.vs/ConsoleApp11/v16/.suo
 10/ConsoleApp11/ConsoleApp11/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
 10/ConsoleApp11/ConsoleApp11/obj/Debug/netcoreapp3.1/ConsoleApp11.AssemblyInfo.cs
 10/ConsoleApp11/.vs/ConsoleApp11/DesignTimeBuild/.dtbcache.v2
