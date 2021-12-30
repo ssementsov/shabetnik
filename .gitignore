@@ -1,2 +1,16 @@
 
 gi.txt
+*.v2
+*.json
+*.dll
+*.exe
+*.pdb
+*.props
+*.targets
+6/ConsoleApp9/ConsoleApp10/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+6/ConsoleApp9/ConsoleApp10/obj/Debug/netcoreapp3.1/ConsoleApp10.AssemblyInfo.cs
+*.cache
+*.txt
+*.editorconfig
+*.cache
+6/ConsoleApp9/.vs/ConsoleApp9/v16/.suo
