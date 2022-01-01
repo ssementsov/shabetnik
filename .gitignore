@@ -1,6 +1,4 @@
 
-
-
 2/ConsoleApp6/ConsoleApp6/obj/project.nuget.cache
 2/ConsoleApp6/ConsoleApp6/obj/project.assets.json
 2/ConsoleApp6/ConsoleApp6/obj/Debug/netcoreapp3.1/ConsoleApp6.pdb
@@ -53,5 +51,37 @@
 4/ConsoleApp7/.vs/ConsoleApp7/v16/.suo
 4/ConsoleApp7/.vs/ConsoleApp7/DesignTimeBuild/.dtbcache.v2
 
-gi.txt
 
+*.v2
+*.json
+*.dll
+*.exe
+*.pdb
+*.props
+*.targets
+6/ConsoleApp9/ConsoleApp10/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+6/ConsoleApp9/ConsoleApp10/obj/Debug/netcoreapp3.1/ConsoleApp10.AssemblyInfo.cs
+*.cache
+*.txt
+*.editorconfig
+*.cache
+6/ConsoleApp9/.vs/ConsoleApp9/v16/.suo
+6/ConsoleApp9/ConsoleApp9/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+6/ConsoleApp9/ConsoleApp9/obj/Debug/netcoreapp3.1/ConsoleApp9.AssemblyInfo.cs
+
+*.cache
+*.json
+*.pdb
+*.editorconfig
+*.dll
+*.txt
+*.exe
+*.targets
+*.props
+10/ConsoleApp11/.vs/ConsoleApp11/v16/.suo
+10/ConsoleApp11/ConsoleApp11/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+10/ConsoleApp11/ConsoleApp11/obj/Debug/netcoreapp3.1/ConsoleApp11.AssemblyInfo.cs
+10/ConsoleApp11/.vs/ConsoleApp11/DesignTimeBuild/.dtbcache.v2
+
+
+gi.txt
