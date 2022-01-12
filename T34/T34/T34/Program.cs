@@ -15,7 +15,14 @@ namespace T34
             }
             // присваеваем значение первого выводимого нами элемента последнее в массиве и выводим так доходя до первого в массиве, получая перевернутый массив
             Console.WriteLine($"\r\nПеревернутый массив: ");
-            for (int i = arrOfIntegers.Length - 1; i >= 0; i--)
+           for (int i = arrOfIntegers.Length - 1; i >= 0; i--)
+            {
+                Console.Write($"{arrOfIntegers[i]} ");
+           }
+            // тоже самое только без использования свойства .Length
+            int arrLength = 30;
+            Console.WriteLine($"\r\nПеревернутый массив без использования свойства .Length: ");
+            for (int i = arrLength - 1; i >= 0; i--)
             {
                 Console.Write($"{arrOfIntegers[i]} ");
             }
