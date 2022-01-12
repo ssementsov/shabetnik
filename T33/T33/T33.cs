@@ -12,32 +12,8 @@ namespace T33
             {
                 Console.Write($"{value} ");
             }
-            // тот же цикл с пузырьковой сортировкой на возрастание, что получился у меня в задании 31
             int l;
-            for (int d = 0; d < arrOfIntegers.Length; d++) //проходим по массиву с начала и до конца
-            {
-                l = arrOfIntegers.Length - 1; //считаем, что l это максимальное значение 
-                for (int j = d; j < arrOfIntegers.Length; j++) //ищем максимальный элемент в неотсортированной части
-                {
-                    if (arrOfIntegers[j] > arrOfIntegers[l])
-                    {
-                        l = j; //нашли в массиве число больше, чем arrOfIntegers[l] - запоминаем его индекс в массиве
-                    }
-                }
-                if (arrOfIntegers[l] == arrOfIntegers[d]) //если максимальный элемент равен текущему значению - ничего не меняем
-                    continue;
-                //меняем местами максимальный элемент и первый в неотсортированной части
-                int temp = arrOfIntegers[d]; //временная переменная, чтобы не потерять значение arrOfIntegers[l]
-                arrOfIntegers[d] = arrOfIntegers[l];
-                arrOfIntegers[l] = temp;
-            }
-            // выводим значения в отсортированном массиве по возрастанию
-            Console.WriteLine("\r\nОтсортированный массив по возрастанию: ");
-            foreach (int value in arrOfIntegers)
-            {
-                Console.Write($"{value} ");
-            }
-            // цикл с пузырьковой сортировкой  на убывание
+            // цикл с пузырьковой сортировкой  на возрастание
             for (int d = 0; d < arrOfIntegers.Length; d++) //проходим по массиву с начала и до конца
             {
                 l = d; //считаем, что l это минимальное значение 
@@ -55,12 +31,87 @@ namespace T33
                 arrOfIntegers[d] = arrOfIntegers[l];
                 arrOfIntegers[l] = temp;
             }
-            // выводим значения в отсортированном массиве по убыванию
-            Console.WriteLine("\r\nОтсортированный массив по убыванию: ");
+            // выводим значения в отсортированном массиве на возрастание
+          
+            Console.WriteLine("\r\nОтсортированный массив на возрастание: ");
+            foreach (int value in arrOfIntegers)
+           {
+                Console.Write($"{value} ");
+           }  
+// тот же цикл с пузырьковой сортировкой на убывание, что получился у меня в задании 31
+
+            for (int d = 0; d < arrOfIntegers.Length; d++) //проходим по массиву с начала и до конца
+            {
+                l = arrOfIntegers.Length - 1; //считаем, что l это максимальное значение 
+                for (int j = d; j < arrOfIntegers.Length; j++) //ищем максимальный элемент в неотсортированной части
+                {
+                    if (arrOfIntegers[j] > arrOfIntegers[l])
+                    {
+                        l = j; //нашли в массиве число больше, чем arrOfIntegers[l] - запоминаем его индекс в массиве
+                    }
+                }
+                if (arrOfIntegers[l] == arrOfIntegers[d]) //если максимальный элемент равен текущему значению - ничего не меняем
+                    continue;
+                //меняем местами максимальный элемент и первый в неотсортированной части
+                int temp = arrOfIntegers[d]; //временная переменная, чтобы не потерять значение arrOfIntegers[l]
+                arrOfIntegers[d] = arrOfIntegers[l];
+                arrOfIntegers[l] = temp;
+            }
+            // выводим значения в отсортированном массиве 
+            Console.WriteLine("\r\nОтсортированный массив на убывание: ");
             foreach (int value in arrOfIntegers)
             {
                 Console.Write($"{value} ");
             }
+            // отсортированные массивы без использования свойства Length
+            //возрастание
+                int arrLength = 30;
+            for (int d = 0; d < arrOfIntegers.Length; d++) 
+            {
+                l = d; 
+                for (int j = d; j < arrOfIntegers.Length; j++) 
+                {
+                    if (arrOfIntegers[j] < arrOfIntegers[l])
+                    {
+                        l = j; 
+                    }
+                }
+                if (arrOfIntegers[l] == arrOfIntegers[d]) 
+                    continue;
+               
+                int temp = arrOfIntegers[d];
+                arrOfIntegers[d] = arrOfIntegers[l];
+                arrOfIntegers[l] = temp;
+            }
+            Console.WriteLine("\r\nОтсортированный массив на возрастание без использования свойства .Length: ");
+            foreach (int value in arrOfIntegers)
+            {
+                Console.Write($"{value} ");
+            }
+            //убывание
+           for (int d = 0; d < arrLength; d++) 
+          {
+               l = arrLength - 1;
+               for (int j = d; j < arrLength; j++) 
+               {
+                   if (arrOfIntegers[j] > arrOfIntegers[l])
+                  {
+                     l = j; 
+                   }
+               }
+              if (arrOfIntegers[l] == arrOfIntegers[d]) 
+                   continue;
+               
+               int temp = arrOfIntegers[d];
+               arrOfIntegers[d] = arrOfIntegers[l];
+               arrOfIntegers[l] = temp;
+            }
+
+           Console.WriteLine("\r\nОтсортированный массив на убывание без использования свойства .Length: ");
+           foreach (int value in arrOfIntegers)
+           {
+               Console.Write($"{value} ");
+           }
         }
     }
 }
